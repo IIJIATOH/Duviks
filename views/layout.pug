@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= 'Дювикс'
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  body(scroll ='yes')
+    header(class = "header")
+      nav(class ="nav")
+          div(class = "nav__logo-box")
+            img(src = "/images/Duviks.png"  class="nav__logo")
+          ul(class ="nav__list")
+            li(class ="nav__el")
+              a(class="nav__link" href="/") Главная страница
+            li(class ="nav__el")  
+              a(class="nav__link" href="/doc") Документы
+            li(class ="nav__el")
+              a(class = "nav__link" href="/about") Контакты
+    block content
+    script(src="/javascripts/script.js")

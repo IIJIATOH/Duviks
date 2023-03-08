@@ -1,0 +1,51 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__header {
+    color: #294c3a;
+    display: block;
+    width: 24rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #294c3a;
+    padding-left: 1rem;
+  }
+  &-info {
+    margin: 10rem;
+
+    &__icon {
+      width: 3rem;
+      stroke: #294c3a;
+    }
+    &__sub-header {
+      font-size: 1rem;
+      color: $color-text;
+      margin-left: 4rem;
+    }
+    &__sub-text {
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+      margin-left: 4rem;
+      color: $color-text;
+    }
+    &__header {
+      color: #294c3a;
+      font-size: 2rem;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 10fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      color: $color-text;
+    }
+    &__text {
+      color: inherit;
+      font-size: 1rem;
+    }
+  }
+}
+.about-info__btn {
+  width: 16rem;
+  height: 6rem;
+  margin: auto;
+}

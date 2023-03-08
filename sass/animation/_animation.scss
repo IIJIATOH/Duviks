@@ -1,0 +1,36 @@
+@keyframes lightning {
+  0% {
+    stroke-dashoffset: 392;
+    fill: grey;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill: grey;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: $color-primary;
+    transform: scale(1, 1);
+  }
+  70% {
+    stroke-dashoffset: 0;
+    fill: $color-primary;
+    transform: scale(1.2, 1.2);
+  }
+  80% {
+    stroke-dashoffset: 0;
+    fill: $color-primary;
+    transform: scale(1, 1);
+  }
+  90% {
+    stroke-dashoffset: 0;
+    fill: $color-primary;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: $color-primary;
+    transform: scale(1, 1);
+  }
+}

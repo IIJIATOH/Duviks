@@ -1,0 +1,21 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding-top: 5rem;
+}
+#lightning {
+  height: 50vh;
+  fill: grey;
+  stroke: #000000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 393;
+  stroke-dashoffset: 393;
+  animation: 6s ease-in-out forwards lightning;
+  transform: translate(-60.609202, -76.028624);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
