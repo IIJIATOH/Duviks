@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "/node_modules/.bin/netlify-lambda serve src",
+    "start": "node ./bin/www",
     "build": "d/node_modules/.bin/netlify-lambda build src",
     "watch:sass": " node-sass sass/main.scss css/style.css -w",
     "dev": "nodemon ./bin/www",
