@@ -22,7 +22,9 @@ var router = express.Router();
 
 // router.use(multer({ storage: storageConfig }).single("avatar"));
 router.get("/", function (req, res, next) {
+  console.log("biba");
   res.render("index", { title: "Express" });
+  document.querySelector("body").style.overflowY = "hidden";
 });
 router.get("/about", function (req, res, next) {
   res.render("about", { title: "About" });

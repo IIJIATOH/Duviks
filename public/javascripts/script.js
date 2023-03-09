@@ -1,14 +1,17 @@
 // DOM Objects
 const html = document.querySelector("html");
+const body = document.querySelector("body");
 const nav = document.querySelector(".nav");
 const popup = document.querySelector(".popup-form");
 const btn_form = document.querySelector(".btn-form");
 const popup__close = document.querySelector(".popup__close");
+const empty = document.querySelector(".empty");
 // Popup open and blur
 const popup_func = function () {
   popup.classList.toggle("display-none");
   html.classList.toggle("blur");
 };
+if (empty) body.style.overflowY = "hidden";
 // Making hover effect
 const handleHover = function (e) {
   if (e.target.classList.contains("nav__link")) {
