@@ -18,6 +18,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .display-none {
   display: none; }
 
+.empty {
+  display: none; }
+
 .header {
   height: 25vh;
   position: relative; }
@@ -55,19 +58,42 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #bbcac0;
   overflow-y: scroll;
   overflow-x: hidden; }
 
 .nav {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #bbcac0;
+  margin-top: 2rem; }
+  .nav__text {
+    transition: all 1s ease-out;
+    align-self: center;
+    opacity: 0;
+    display: block;
+    margin-right: 1rem;
+    font-size: 1rem; }
+  .nav__svg {
+    transition: all 1s ease-out;
+    width: 3rem;
+    transform: translateX(100px);
+    margin-left: 5px; }
+  .nav__el {
+    transition: all 1s ease-out;
+    background: linear-gradient(to top, #3cc469 50%, #bbcac0 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    width: 250px; }
+  .nav__el:hover {
+    background-position: bottom; }
+  .nav__el:hover .nav__svg {
+    transform: translateX(0); }
+  .nav__el:hover .nav__text {
+    opacity: 1; }
   .nav__logo-box {
-    padding: 5rem;
+    padding-left: 5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rem; }
+    align-items: center; }
   .nav__logo {
     height: 3.5rem;
     display: flex;
@@ -77,13 +103,12 @@ body {
   .nav__list {
     display: flex;
     flex-direction: row;
-    list-style: none;
-    padding: 5rem;
-    padding-top: 0; }
+    list-style: none; }
   .nav__link:link, .nav__link:visited {
-    display: inline-block;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
-    padding: 3rem;
     color: #133825;
     font-weight: 600;
     font-size: 0.9rem;

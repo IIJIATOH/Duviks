@@ -1,13 +1,46 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  background-color: #bbcac0;
+  margin-top: 2rem;
+
+  &__text {
+    transition: all 1s ease-out;
+    align-self: center;
+    opacity: 0;
+    display: block;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  &__svg {
+    transition: all 1s ease-out;
+    width: 3rem;
+    transform: translateX(100px);
+    margin-left: 5px;
+  }
+  &__el {
+    transition: all 1s ease-out;
+    background: linear-gradient(to top, #3cc469 50%, #bbcac0 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    width: 250px;
+  }
+  // animations
+  &__el:hover {
+    background-position: bottom;
+  }
+  &__el:hover &__svg {
+    transform: translateX(0);
+  }
+  &__el:hover &__text {
+    opacity: 1;
+  }
 
   &__logo-box {
-    padding: 5rem;
+    padding-left: 5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 3rem;
   }
 
   &__logo {
@@ -21,14 +54,13 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 5rem;
-    padding-top: 0;
   }
   &__link:link,
   &__link:visited {
-    display: inline-block;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
-    padding: 3rem;
     color: #133825;
     font-weight: 600;
     font-size: 0.9rem;
