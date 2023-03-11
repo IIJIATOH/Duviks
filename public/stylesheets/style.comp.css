@@ -26,7 +26,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   position: relative; }
   .header-text {
     margin-bottom: 2rem;
-    color: #15261d; }
+    color: #15261d;
+    font-weight: 500; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -35,15 +36,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
     text-align: center; }
 
 footer {
-  position: absolute;
-  margin-bottom: 300px;
-  bottom: 0;
+  position: relative;
   height: 20vh;
   width: 100vw;
   z-index: 1; }
 
 .footer-background {
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
 
 * {
   margin: 0;
@@ -65,7 +66,8 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #bbcac0;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  box-shadow: 0 5px 10px gray, 0 -2px 10px gray; }
   .nav__text {
     transition: all 1s ease-out;
     align-self: center;
@@ -154,21 +156,22 @@ div input {
 .btn:link,
 .btn:visited {
   display: inline-block;
+  box-shadow: 0 3px 5px gray;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 1rem 2rem;
   border-radius: 9px;
   font-weight: 600;
   background-color: #57886f;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: none;
   color: #ffffff; }
 
 .btn:hover,
 .btn:focus {
-  background-color: #294c3a;
-  color: fff;
-  box-shadow: inset 0 0 0 4px #fff; }
+  transform: translateY(-5px);
+  background-color: #294c3a; }
 
 .blur body > *:not(.popup-form) {
   filter: blur(3px); }
@@ -227,11 +230,12 @@ label {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -170px; }
   .about__header {
     color: #294c3a;
     display: block;
-    width: 24rem;
+    width: 27rem;
     margin: 0 auto;
     border-bottom: 1px solid #294c3a;
     padding-left: 1rem; }
@@ -270,8 +274,7 @@ label {
 .product-list {
   color: #266f4a;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: center; }
   .product-list__icon {
     fill: #133825; }
   .product-list__item {
@@ -283,12 +286,14 @@ label {
 .documents__license {
   display: block;
   margin: 0 auto;
-  width: 26rem; }
+  width: 26rem;
+  margin-bottom: 5rem; }
 
 .documents__header {
   display: flex;
   justify-content: center;
-  color: #294c3a; }
+  color: #294c3a;
+  font-size: 3rem; }
 
 .documents__text {
   display: flex;
