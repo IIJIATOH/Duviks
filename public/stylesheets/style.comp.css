@@ -50,8 +50,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0.5rem 0; }
+  align-items: center; }
   .social_icon li {
     list-style: none; }
     .social_icon li a {
@@ -67,8 +66,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0.5rem 0; }
+  align-items: center; }
   .menu li {
     list-style: none; }
     .menu li a {
@@ -131,7 +129,6 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column; }
 
 body {
@@ -320,8 +317,7 @@ label {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: -170px; }
+  grid-template-columns: 1fr 1fr; }
   .about__header {
     color: #294c3a;
     display: block;
@@ -389,5 +385,5 @@ label {
   display: flex;
   justify-content: center;
   color: #294c3a;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
   margin-top: 2rem; }

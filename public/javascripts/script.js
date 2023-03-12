@@ -11,7 +11,11 @@ const popup_func = function () {
   popup.classList.toggle("display-none");
   html.classList.toggle("blur");
 };
-if (empty) body.style.overflowY = "hidden";
+if (empty) {
+  body.style.overflowY = "hidden";
+  body.style.justifyContent = "flex-end";
+}
+
 // Making hover effect
 const handleHover = function (e) {
   if (e.target.classList.contains("nav__link")) {
